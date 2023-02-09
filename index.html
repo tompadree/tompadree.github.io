@@ -1,7 +1,12 @@
 <html>
    <head>   
       <script type = "text/javascript">
-            function triggerEvent() {
+         window.appResumeEvent = new Event('appresume');
+
+         
+        window.addEventListener('appresume', triggerEvent, false);
+        
+         function triggerEvent() {
                var messgeToPost = {"machineLabel":"M1", "parameter2":"value2"};
                window.postMessage(messgeToPost);
              }
