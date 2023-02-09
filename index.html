@@ -1,0 +1,15 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+            function triggerEvent() {
+               var messgeToPost = {"machineLabel":"M1", "parameter2":"value2"};
+               window.webkit.messageHandlers.challengeDetails.postMessage(messgeToPost);
+             }
+      </script>      
+   </head>
+   <body>
+      <form>
+         <input type = "button" onclick = "triggerEvent()" value = "Fire!" />
+      </form>      
+   </body>
+</html>
