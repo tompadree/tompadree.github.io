@@ -10,6 +10,7 @@
                var messgeToPost = {"machineLabel":"M1", "parameter2":"value2"};
                window.postMessage(messgeToPost);
                      window.appResumeEvent = new Event('appresume');
+            window.webkit.messageHandlers.postMessage(messgeToPost);
 
              }
       </script>      
