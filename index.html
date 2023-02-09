@@ -5,7 +5,7 @@
          function triggerEvent() {
                var messgeToPost = {"machineLabel":"M1", "parameter2":"value2"};
             
-            window.webkit.messageHandlers.androidListener.postMessage("some message");
+             window.webkit.messageHandlers.postMessage(messgeToPost);
 
              }
       </script>      
