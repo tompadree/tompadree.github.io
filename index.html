@@ -1,16 +1,11 @@
 <html>
    <head>   
       <script type = "text/javascript">
-         window.appResumeEvent = new Event('appresume');
-
-         
-        window.addEventListener('appresume', triggerEvent, false);
         
          function triggerEvent() {
                var messgeToPost = {"machineLabel":"M1", "parameter2":"value2"};
-               window.postMessage(messgeToPost);
-                     window.appResumeEvent = new Event('appresume');
-            window.webkit.messageHandlers.postMessage(messgeToPost);
+            
+            window.webkit.messageHandlers.iosListener.postMessage("some message")
 
              }
       </script>      
