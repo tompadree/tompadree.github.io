@@ -2,25 +2,12 @@
    <head>   
       <script type = "text/javascript">
         
-         function triggerEvent() {
-               var messgeToPost = {"machineLabel":"M1", "parameter2":"value2"};
-            
-               window.parent.postMessage(JSON.stringify(messgeToPost), '*');
-
-
-             }
-         
-         window.addEventListener("message", (event) => {
-            if (event.origin !== "http://example.org:8080")
-               return;
-
-            // ...
-         }, false);
+        
       </script>      
    </head>
    <body>
       <form>
-         <input type = "button" onclick = "AndroidListener.triggerEvent("someValue")" value = "Fire!" />
+         <button type="button" value="someValue" onclick="ok.performClick(this.value);">OK</button>
       </form>      
    </body>
 </html>
