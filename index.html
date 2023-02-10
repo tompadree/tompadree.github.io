@@ -2,12 +2,17 @@
    <head>   
       <script type = "text/javascript">
         
-        
+        function performClick() {
+
+               var messgeToPost = {"machineLabel":"M1", "parameter2":"value2"};
+           
+           androidListener.postMessage("dsadasdsa");
+        }
       </script>      
    </head>
    <body>
       <form>
-         <button type="button" value="someValue" onclick="androidListener.performClick(this.value);">OK</button>
+         <button type="button" " onclick="androidListener.performClick();">OK</button>
       </form>      
    </body>
 </html>
