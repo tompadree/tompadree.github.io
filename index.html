@@ -5,13 +5,22 @@
          function triggerEvent() {
                var messgeToPost = {"machineLabel":"M1", "parameter2":"value2"};
             
+               window.parent.postMessage(JSON.stringify(messgeToPost), '*');
+
 
              }
+         
+         window.addEventListener("message", (event) => {
+            if (event.origin !== "http://example.org:8080")
+               return;
+
+            // ...
+         }, false);
       </script>      
    </head>
    <body>
       <form>
-         <input type = "button" onclick = "triggerEvent()" value = "Fire!" />
+         <input type = "button" onclick = "ok.triggerEvent("someValue")" value = "Fire!" />
       </form>      
    </body>
 </html>
