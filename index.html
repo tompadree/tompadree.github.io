@@ -1,11 +1,7 @@
 <html>
    <head>   
       <script type = "text/javascript">
-        
-             function performClick(code) {
-               var params = {"exercise_code":code};
-               window.parent.postMessage(params);
-             }
+  
          
          function getValues(code) {
             document.getElementById("btnOK").value = code;
@@ -15,13 +11,13 @@
    </head>
    <body>
       <form>
-         <button type="button" value="tomiTOmi" onclick="androidListener.performClick(this.value);">OK</button>
+         <button type="button" value="998" onclick="androidListener.performClick(this.value);">OK</button>
          <br>
          <input type = "button" onclick = "performClick('998')" value = "Chest Press" /> 
          <br>
          <input type = "button" onclick = "androidListener.performClick('1012')" value = "Triceps Press" /> 
          <br>
-         <button type= "button" value= "CHest press" id= "btnOK" onclick= "getValues('998');ok.performClick(this.value); " > OK </button>
+         <button type= "button" value= "CHest press" id= "btnOK" onclick= "getValues('998');androidListener.performClick(this.value); " > OK </button>
 
       </form>      
    </body>
