@@ -6,6 +6,10 @@
                var params = {"exercise_code":code};
                window.parent.postMessage(params);
              }
+         
+         function getValues(code) {
+            document.getElementById("btnOK").value = code;
+         }
 
       </script>      
    </head>
@@ -16,6 +20,9 @@
          <input type = "button" onclick = "performClick('998')" value = "Chest Press" /> 
          <br>
          <input type = "button" onclick = "androidListener.performClick('1012')" value = "Triceps Press" /> 
+         <br>
+         <button type= "button" value= "CHest press" id= "btnOK" onclick= "getValues('998');ok.performClick(this.value); " > OK </button>
+
       </form>      
    </body>
 </html>
