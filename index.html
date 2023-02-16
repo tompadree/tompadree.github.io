@@ -11,13 +11,11 @@
    </head>
    <body>
       <form>
-         <button type="button" value="998" onclick="androidListener.performClick(this.value);">OK</button>
+         <button type="button" value="998" onclick="androidListener.performClick(this.value)"/>
          <br>
-         <input type = "button" onclick = "performClick('998')" value = "Chest Press" /> 
+         <input type = "button" value = "Triceps Press" onclick = "androidListener.performClick(this.value + ' = ' + '1013')"/> 
          <br>
-         <input type = "button" onclick = "androidListener.performClick(this.value + ' = ' + '1013')" value = "Triceps Press" /> 
-         <br>
-         <button type= "button" value= "CHest press" id= "btnOK" onclick= "getValues('998');androidListener.performClick(this.value); " > OK </button>
+         <button type= "button" value= "CHest press" id= "btnOK" onclick= "getValues('998');androidListener.performClick(this.value);"/> 
 
       </form>      
    </body>
