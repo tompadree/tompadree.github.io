@@ -1,12 +1,20 @@
 <html>
    <head>   
       <script type = "text/javascript">
+         
+           function performClick(code) {
+
+               var params = {"exercise_code":code};
+
+              window.parent.postMessage(params);
+
+             }
   
       </script>      
    </head>
    <body>
       <form>
-         <input type="button" value="998" onclick="androidListener.performClick(this.value)" />
+         <input type="button" value="998" onclick="performClick(this.value)" />
          <br>
          <input type = "button" value = "Triceps Press" onclick = "androidListener.performClick(this.value + ' = ' + '1012')"  /> 
       </form>      
