@@ -9,6 +9,11 @@
               window.parent.postMessage(params);
 
              }
+         
+         function fireThisMethod() {
+            var params = {"exercise_code":code};
+            androidListener.performClick("Message to java");
+         }
   
       </script>      
    </head>
@@ -17,6 +22,11 @@
          <input type="button" value="998" onclick="performClick(this.value)" />
          <br>
          <input type = "button" value = "Triceps Press" onclick = "androidListener.performClick(this.value + ' = ' + '1012')"  /> 
+         <br>
+         <br>
+         <br>
+             <button onclick="fireThisMethod()" type="button">Click Me!</button>
+
       </form>      
    </body>
 </html>
