@@ -6,7 +6,7 @@
 var event = Android.postMessage("fdfdf"); 
 
 // Dispatch/Trigger/Fire the event
-document.dispatchEvent(fireThisMethod());
+document.dispatchEvent(fireOnOpen());
          
 function fireThisMethod() {
    Android.postMessage("1000");
@@ -15,8 +15,8 @@ function fireThisMethod() {
          function fireOnOpen() {
             Android.postMessage("WEBVIEW OEPENED");
          }
-   const myBtn = document.getElementById('my-btn');
- myBtn.click();
+   //const myBtn = document.getElementById('my-btn');
+ //myBtn.click();
       </script>      
    </head>
    <body>
@@ -28,8 +28,8 @@ function fireThisMethod() {
          <br>
          <br>
              <button onclick="fireThisMethod()" type="button">Click Me!</button>
-            <button onclick="fireOnOpen()" id="my-btn">Don't click me</button>
-          const myBtn = document.getElementById('my-btn');
+           // <button onclick="fireOnOpen()" id="my-btn">Don't click me</button>
+          //const myBtn = document.getElementById('my-btn');
  myBtn.click();
       </form>      
    </body>
